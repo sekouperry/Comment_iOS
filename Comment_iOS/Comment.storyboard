@@ -80,11 +80,8 @@
                         <outlet property="cancelButton" destination="8uo-Jw-3Mw" id="n9Y-88-1Vh"/>
                         <outlet property="commentLabel" destination="fqX-l8-XFE" id="C75-ay-7ux"/>
                         <outlet property="commentTextView" destination="VYB-2q-guB" id="eyR-Nq-Ame"/>
-                        <outlet property="leaveCommentInstructionLabel" destination="fqX-l8-XFE" id="QH9-y7-LId"/>
-                        <outlet property="ratingImageView" destination="hre-sq-cb7" id="nhR-8O-jMH"/>
                         <outlet property="ratingLabel" destination="yH9-ek-dRm" id="cVb-gm-ovK"/>
                         <outlet property="ratingView" destination="hre-sq-cb7" id="ZBa-e4-OhM"/>
-                        <outlet property="selectRatingInstructionLabel" destination="yH9-ek-dRm" id="giS-Li-zFp"/>
                         <outlet property="sendButton" destination="XWb-dP-wJ1" id="Kk0-mr-eVf"/>
                     </connections>
                 </viewController>
