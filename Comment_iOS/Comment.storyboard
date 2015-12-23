@@ -19,84 +19,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6DE-mE-svd">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VYB-2q-guB">
-                                        <rect key="frame" x="8" y="209" width="584" height="345"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="Bxq-ZE-AUo" id="jGR-Rn-Uo9"/>
-                                        </connections>
-                                    </textView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hre-sq-cb7">
-                                        <rect key="frame" x="180" y="102" width="240" height="45"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="240" id="6Oi-hN-aPC"/>
-                                            <constraint firstAttribute="width" secondItem="hre-sq-cb7" secondAttribute="height" multiplier="16:3" id="QFw-FV-4YQ"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rental Review" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2X-t5-lja">
-                                        <rect key="frame" x="237" y="16" width="126" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT A RATING FOR THE ITEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH9-ek-dRm">
-                                        <rect key="frame" x="8" y="76" width="225.5" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEAVE A COMMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqX-l8-XFE">
-                                        <rect key="frame" x="8" y="183" width="136.5" height="18"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsv-c7-Mb8">
-                                        <rect key="frame" x="256" y="562" width="88" height="30"/>
-                                        <state key="normal" title="Send Review"/>
-                                        <connections>
-                                            <action selector="sendButtonTapped:" destination="Bxq-ZE-AUo" eventType="touchUpInside" id="IoI-BJ-Dq5"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hre-sq-cb7">
+                                <rect key="frame" x="180" y="110" width="240" height="45"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="fqX-l8-XFE" firstAttribute="leading" secondItem="6DE-mE-svd" secondAttribute="leading" constant="8" id="2D0-zP-nzo"/>
-                                    <constraint firstItem="hre-sq-cb7" firstAttribute="centerX" secondItem="6DE-mE-svd" secondAttribute="centerX" id="60e-WY-Rdi"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="Rsv-c7-Mb8" secondAttribute="bottom" id="HKG-qm-hdE"/>
-                                    <constraint firstItem="VYB-2q-guB" firstAttribute="top" secondItem="fqX-l8-XFE" secondAttribute="bottom" constant="8" id="M5P-Qo-c3z"/>
-                                    <constraint firstItem="Rsv-c7-Mb8" firstAttribute="centerX" secondItem="6DE-mE-svd" secondAttribute="centerX" id="NGD-pG-ShA"/>
-                                    <constraint firstItem="Rsv-c7-Mb8" firstAttribute="top" secondItem="VYB-2q-guB" secondAttribute="bottom" constant="8" id="ShP-ks-bfl"/>
-                                    <constraint firstAttribute="trailing" secondItem="VYB-2q-guB" secondAttribute="trailing" constant="8" id="TlQ-nR-bdA"/>
-                                    <constraint firstItem="hre-sq-cb7" firstAttribute="top" secondItem="yH9-ek-dRm" secondAttribute="bottom" constant="8" id="U26-4l-6xR"/>
-                                    <constraint firstItem="VYB-2q-guB" firstAttribute="leading" secondItem="6DE-mE-svd" secondAttribute="leading" constant="8" id="gaj-8X-Ypp"/>
-                                    <constraint firstItem="S2X-t5-lja" firstAttribute="centerX" secondItem="6DE-mE-svd" secondAttribute="centerX" id="hCR-wa-pfV"/>
-                                    <constraint firstItem="S2X-t5-lja" firstAttribute="top" secondItem="6DE-mE-svd" secondAttribute="top" constant="16" id="jOm-Vi-JZ3"/>
-                                    <constraint firstItem="yH9-ek-dRm" firstAttribute="top" secondItem="S2X-t5-lja" secondAttribute="bottom" constant="36" id="nM7-aM-tzU"/>
-                                    <constraint firstItem="fqX-l8-XFE" firstAttribute="top" secondItem="hre-sq-cb7" secondAttribute="bottom" constant="36" id="ofC-rK-hMq"/>
-                                    <constraint firstItem="yH9-ek-dRm" firstAttribute="leading" secondItem="6DE-mE-svd" secondAttribute="leading" constant="8" id="vJB-HF-blf"/>
-                                    <constraint firstItem="VYB-2q-guB" firstAttribute="centerX" secondItem="6DE-mE-svd" secondAttribute="centerX" id="zha-Gf-NDw"/>
+                                    <constraint firstAttribute="width" constant="240" id="6Oi-hN-aPC"/>
+                                    <constraint firstAttribute="width" secondItem="hre-sq-cb7" secondAttribute="height" multiplier="16:3" id="QFw-FV-4YQ"/>
                                 </constraints>
-                            </scrollView>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SELECT A RATING FOR THE ITEM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yH9-ek-dRm">
+                                <rect key="frame" x="20" y="84" width="225.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEAVE A COMMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqX-l8-XFE">
+                                <rect key="frame" x="20" y="175" width="136.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" text="Comment Text" translatesAutoresizingMaskIntoConstraints="NO" id="VYB-2q-guB">
+                                <rect key="frame" x="20" y="201" width="560" height="379"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Bxq-ZE-AUo" id="jGR-Rn-Uo9"/>
+                                </connections>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6DE-mE-svd" firstAttribute="centerX" secondItem="OGW-jv-QkT" secondAttribute="centerX" id="cen-9p-Yuq"/>
-                            <constraint firstItem="6DE-mE-svd" firstAttribute="width" secondItem="OGW-jv-QkT" secondAttribute="width" id="de3-tD-71I"/>
-                            <constraint firstItem="6DE-mE-svd" firstAttribute="centerY" secondItem="OGW-jv-QkT" secondAttribute="centerY" id="sX3-xs-9Tw"/>
-                            <constraint firstItem="6DE-mE-svd" firstAttribute="height" secondItem="OGW-jv-QkT" secondAttribute="height" id="y5n-Fb-HBk"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="fqX-l8-XFE" secondAttribute="leading" id="8bp-5a-ieB"/>
+                            <constraint firstItem="hre-sq-cb7" firstAttribute="centerX" secondItem="OGW-jv-QkT" secondAttribute="centerX" id="Ak4-kc-rwz"/>
+                            <constraint firstItem="VYB-2q-guB" firstAttribute="top" secondItem="fqX-l8-XFE" secondAttribute="bottom" constant="8" id="ToA-RD-g4M"/>
+                            <constraint firstItem="VYB-2q-guB" firstAttribute="centerX" secondItem="OGW-jv-QkT" secondAttribute="centerX" id="f0k-j6-wG0"/>
+                            <constraint firstItem="yH9-ek-dRm" firstAttribute="top" secondItem="rpy-ek-dnU" secondAttribute="bottom" constant="20" id="jkr-AD-1kk"/>
+                            <constraint firstItem="ti7-fq-lNB" firstAttribute="top" secondItem="VYB-2q-guB" secondAttribute="bottom" constant="20" id="koN-WQ-1Fx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="yH9-ek-dRm" secondAttribute="leading" id="nN3-Yi-xbN"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="VYB-2q-guB" secondAttribute="leading" id="naM-iW-dRS"/>
+                            <constraint firstItem="hre-sq-cb7" firstAttribute="top" secondItem="yH9-ek-dRm" secondAttribute="bottom" constant="8" id="p43-gb-cTH"/>
+                            <constraint firstItem="fqX-l8-XFE" firstAttribute="top" secondItem="hre-sq-cb7" secondAttribute="bottom" constant="20" id="wAh-qT-4Rb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="K3q-Xe-ba0">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8uo-Jw-3Mw">
                             <connections>
                                 <action selector="cancelButtonTapped:" destination="Bxq-ZE-AUo" id="Ras-mg-9y5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" style="done" id="XWb-dP-wJ1">
+                            <connections>
+                                <action selector="sendButtonTapped:" destination="Bxq-ZE-AUo" id="uDL-Av-BiJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -106,13 +81,11 @@
                         <outlet property="commentLabel" destination="fqX-l8-XFE" id="C75-ay-7ux"/>
                         <outlet property="commentTextView" destination="VYB-2q-guB" id="eyR-Nq-Ame"/>
                         <outlet property="leaveCommentInstructionLabel" destination="fqX-l8-XFE" id="QH9-y7-LId"/>
-                        <outlet property="pageTitle" destination="S2X-t5-lja" id="L80-Gv-IR5"/>
                         <outlet property="ratingImageView" destination="hre-sq-cb7" id="nhR-8O-jMH"/>
                         <outlet property="ratingLabel" destination="yH9-ek-dRm" id="cVb-gm-ovK"/>
                         <outlet property="ratingView" destination="hre-sq-cb7" id="ZBa-e4-OhM"/>
-                        <outlet property="scrollView" destination="6DE-mE-svd" id="tk8-pz-aAB"/>
                         <outlet property="selectRatingInstructionLabel" destination="yH9-ek-dRm" id="giS-Li-zFp"/>
-                        <outlet property="sendButton" destination="Rsv-c7-Mb8" id="fS4-np-jfR"/>
+                        <outlet property="sendButton" destination="XWb-dP-wJ1" id="Kk0-mr-eVf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fML-WO-XZ1" userLabel="First Responder" sceneMemberID="firstResponder"/>

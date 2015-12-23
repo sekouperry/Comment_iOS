@@ -11,11 +11,12 @@ import UIKit
 class CommentVC: UIViewController {
 
     @IBOutlet var cancelButton: UIBarButtonItem!
+    @IBOutlet var sendButton: UIBarButtonItem!
     @IBOutlet var ratingLabel: UILabel!
     @IBOutlet var ratingView: UIImageView!
     @IBOutlet var commentLabel: UILabel!
     @IBOutlet var commentTextView: UITextView!
-    @IBOutlet var sendButton: UIButton!
+    
     
     
     override func viewDidLoad() {
